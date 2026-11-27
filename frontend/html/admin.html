@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | Escola</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <div class="app">
+
+        <header class="topbar">
+            <div class="brand">
+                <span class="brand-mark">E</span>
+                <h1>Escola</h1>
+                <span class="badge">Admin</span>
+            </div>
+            <button id="logout" class="btn ghost">Sair</button>
+        </header>
+
+        <div class="layout">
+
+            <nav class="sidebar" aria-label="Menu principal">
+                <ul>
+                    <li><button id="btnStudents" class="nav-btn">Alunos</button></li>
+                    <li><button id="btnTeachers" class="nav-btn">Professores</button></li>
+                    <li><button id="btnClasses"  class="nav-btn">Turmas</button></li>
+                    <li><button id="btnSubjects" class="nav-btn">Disciplinas</button></li>
+                </ul>
+            </nav>
+
+            <main class="content">
+                <div class="search-bar">
+                    <input
+                        type="search"
+                        id="search"
+                        class="input"
+                        placeholder="Buscar..."
+                    />
+                </div>
+
+                <div id="cards" class="cards">
+                    <p class="empty-state">Selecione uma seção no menu para começar.</p>
+                </div>
+            </main>
+
+        </div>
+    </div>
+
+    <!-- home.js importa todos os outros módulos -->
+    <script src="../js/pages/home.js" type="module"></script>
+
+</body>
+</html>
